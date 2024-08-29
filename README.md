@@ -106,4 +106,4 @@ We welcome your valuable feedback and creativity. Our team is always ready to co
 
   
 
-We look forward to hearing from you and co-creating a more prosperous cloud ecosystem. At [Your Company Name], we believe in the power of collaboration. Let's embark on a new chapter in cloud computing together!
+We look forward to hearing from you and co-creating a more prosperous cloud ecosystem. At Novita AI, we believe in the power of collaboration. Let's embark on a new chapter in cloud computing together!
