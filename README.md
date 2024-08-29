@@ -3,7 +3,7 @@
 APIs, Serverless and GPU Instance In One AI Cloud
 
 <a href="https://novita.ai/">Homepage</a> •
-<a href="https://novita.ai/docs/get-started/quickstart.html">API Playground</a> •
+<a href="https://novita.ai/model-api/playground">API Playground</a> •
 <a href="https://novita.ai/docs/get-started/quickstart.html">Documentation</a> •
 <a href="https://x.com/novita_ai_labs">Twitter</a> •
 <a href="https://blogs.novita.ai/">Blog</a>
