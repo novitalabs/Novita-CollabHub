@@ -20,8 +20,7 @@ List of all models on Novita AI
 | Name                                                              | Author            | Type          | Landingpage |
 | ----------------------------------------------------------------- | ----------------- | ------------- | ----------- |
 | [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) | black-forest-labs | Text-To-Video |             |
-|                                                                   |                   |               |             |
-|                                                                   |                   |               |             |
+
 
 
 
@@ -31,9 +30,8 @@ List of all Frameworks on Novita AI
 
 | Name                                                | Author    | Type | Landingpage |
 | --------------------------------------------------- | --------- | ---- | ----------- |
-| [KoboldCpp](https://github.com/LostRuins/koboldcpp) | LostRuins |      |             |
-|                                                     |           |      |             |
-|                                                     |           |      |             |
+| [KoboldCpp](https://github.com/LostRuins/koboldcpp) | LostRuins | LLM  |             |
+
 
 
 
