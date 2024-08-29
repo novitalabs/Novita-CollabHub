@@ -45,7 +45,28 @@ List of all Frameworks on Novita AI
 [**MIT License**](https://opensource.org/license/MIT)
 
 
+---
 
+## Collaboration Brief: Novita AI & Project Developers
+**Background:**
+At Novita AI, we provide a cost-effective GPU cloud platform designed to accelerate AI innovation globally. Our scalable and on-demand GPU instances come with free GPU credits for new users, making it easier than ever to harness the power of AI.
+Collaboration Opportunity:
+
+
+We’re excited to collaborate with you on your projects published on GitHub or Hugging Face! Our proposal includes creating a template for your project and featuring it on our website. We’ll ensure that your name remains associated with the original project, along with a free link to the project.
+
+**Promotion Strategy:**
+1. Video Showcase: We’ll create a video highlighting the template's features and share it across Novita AI’s official social media channels.
+2. GitHub Exposure: Your project collaboration details will be prominently displayed on Novita AI’s GitHub, along with an entry point for trials.
+3. Affiliate Promotion: You can promote the template on your end as well, potentially through an affiliate model.
+4. Dedicated Blog Posts: We’ll write a dedicated blog for your project and its template, increasing visibility and engagement.
+5. Wide Reach: Each project template landing page will be submitted to over 100 websites for promotion.
+6. Twitter Advertising: We’ll also run targeted ads for each template landing page on Twitter to maximize exposure.
+
+We believe this collaboration can significantly increase the visibility of your projects while providing added value to our users. Let’s work together to showcase your innovation to a broader audience!
+Looking forward to your thoughts!
+
+---
 ## Contact us
 
 **Join Our Open-Source Journey, Co-Creating the Cloud Ecosystem**
