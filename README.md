@@ -45,7 +45,7 @@ List of all Frameworks on Novita AI
 ---
 
 ## Collaboration Brief: Novita AI & Project Developers
-**Background:**
+
 At Novita AI, we provide a cost-effective GPU cloud platform designed to accelerate AI innovation globally. Our scalable and on-demand GPU instances come with free GPU credits for new users, making it easier than ever to harness the power of AI.
 
 **Collaboration Opportunity:**
