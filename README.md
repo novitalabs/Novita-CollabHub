@@ -17,9 +17,9 @@ Novita AI is a company dedicated to promoting the popularization of AI technolog
 
 List of all models on Novita AI
 
-| Name                                                              | Author            | Type          | Landingpage |
-| ----------------------------------------------------------------- | ----------------- | ------------- | ----------- |
-| [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) | black-forest-labs | Text-To-Video |             |
+| Name                                                              | Author            | Type          | Landingpage                                        |
+| ----------------------------------------------------------------- | ----------------- | ------------- | -------------------------------------------------- |
+| [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) | black-forest-labs | Text-To-Video | https://novita.ai/templates/koboldcpp-on-novita-ai |
 
 
 
@@ -28,10 +28,9 @@ List of all models on Novita AI
 
 List of all Frameworks on Novita AI
 
-| Name                                                | Author    | Type | Landingpage |
-| --------------------------------------------------- | --------- | ---- | ----------- |
-| [KoboldCpp](https://github.com/LostRuins/koboldcpp) | LostRuins | LLM  |             |
-
+| Name                                                | Author    | Type | Landingpage                                        |
+| --------------------------------------------------- | --------- | ---- | -------------------------------------------------- |
+| [KoboldCpp](https://github.com/LostRuins/koboldcpp) | LostRuins | LLM  | https://novita.ai/templates/flux1-dev-on-novita-ai |
 
 
 
@@ -48,7 +47,8 @@ List of all Frameworks on Novita AI
 ## Collaboration Brief: Novita AI & Project Developers
 **Background:**
 At Novita AI, we provide a cost-effective GPU cloud platform designed to accelerate AI innovation globally. Our scalable and on-demand GPU instances come with free GPU credits for new users, making it easier than ever to harness the power of AI.
-Collaboration Opportunity:
+
+**Collaboration Opportunity:**
 
 
 We’re excited to collaborate with you on your projects published on GitHub or Hugging Face! Our proposal includes creating a template for your project and featuring it on our website. We’ll ensure that your name remains associated with the original project, along with a free link to the project.
