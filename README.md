@@ -69,12 +69,12 @@ We’re excited to collaborate with you on your projects published on GitHub or 
 
 **Promotion Strategy:**
 
-1. Video Showcase: We’ll create a video highlighting the template's features and share it across Novita AI’s official social media channels.
-2. GitHub Exposure: Your project collaboration details will be prominently displayed on Novita AI’s GitHub, along with an entry point for trials.
-3. Affiliate Promotion: You can promote the template on your end as well, potentially through an affiliate model.
-4. Dedicated Blog Posts: We’ll write a dedicated blog for your project and its template, increasing visibility and engagement.
-5. Wide Reach: Each project template landing page will be submitted to over 100 websites for promotion.
-6. Twitter Advertising: We’ll also run targeted ads for each template landing page on Twitter to maximize exposure.
+1. **Video Showcase:** We’ll create a video highlighting the template's features and share it across Novita AI’s official social media channels.
+2. **GitHub Exposure:** Your project collaboration details will be prominently displayed on Novita AI’s GitHub, along with an entry point for trials.
+3. **Affiliate Promotion:** You can promote the template on your end as well, potentially through an affiliate model.
+4. **Dedicated Blog Posts:** We’ll write a dedicated blog for your project and its template, increasing visibility and engagement.
+5. **Wide Reach:** Each project template landing page will be submitted to over 100 websites for promotion.
+6. **Twitter Advertising:** We’ll also run targeted ads for each template landing page on Twitter to maximize exposure.
 
 We believe this collaboration can significantly increase the visibility of your projects while providing added value to our users. Let’s work together to showcase your innovation to a broader audience!
 Looking forward to your thoughts!
