@@ -2,11 +2,11 @@
 
 APIs, Serverless and GPU Instance In One AI Cloud
 
-<a href="https://novita.ai/">Homepage</a> •
-<a href="https://novita.ai/model-api/playground">API Playground</a> •
-<a href="https://novita.ai/docs/get-started/quickstart.html">Documentation</a> •
+<a href="https://novita.ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue">Homepage</a> •
+<a href="https://novita.ai/model-api/playground?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue">API Playground</a> •
+<a href="https://novita.ai/docs/get-started/quickstart.html?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue">Documentation</a> •
 <a href="https://x.com/novita_ai_labs">Twitter</a> •
-<a href="https://blogs.novita.ai/">Blog</a>
+<a href="https://blogs.novita.ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue">Blog</a>
 
 
 
@@ -31,7 +31,7 @@ List of all models on Novita AI
 
 | Name                                                              | Author            | Type          | Landing Page                                                                                                                                          |
 | ----------------------------------------------------------------- | ----------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) | black-forest-labs | Text-To-Video | [Run FLUX.1-dev on Novita AI](https://novita.ai/templates/koboldcpp-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) | black-forest-labs | Text-To-Video | [Run FLUX.1-dev on Novita AI](https://novita.ai/templates/flux1-dev-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
 
 
 
@@ -42,7 +42,7 @@ List of all Frameworks on Novita AI
 
 | Name                                                | Author    | Type | Landing Page                                                                                                                                         |
 | --------------------------------------------------- | --------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [KoboldCpp](https://github.com/LostRuins/koboldcpp) | LostRuins | LLM  | [Run KoboldCpp on Novita AI](https://novita.ai/templates/flux1-dev-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| [KoboldCpp](https://github.com/LostRuins/koboldcpp) | LostRuins | LLM  | [Run KoboldCpp on Novita AI](https://novita.ai/templates/koboldcpp-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
 
 
 
