@@ -14,7 +14,7 @@ APIs, Serverless and GPU Instance In One AI Cloud
 
 Novita AI is a company dedicated to promoting the popularization of AI technology. We have provided high-quality models and framework templates created by the team and the community, aiming to lower the threshold for AI development, accelerate the implementation of AI applications, and build a prosperous AI ecosystem with developers around the world.
 
-
+Click [here](https://novita.ai/templates) for more details.
 
 
 ## Contents
@@ -29,9 +29,13 @@ Novita AI is a company dedicated to promoting the popularization of AI technolog
 
 List of all models on Novita AI
 
-| Name                                                              | Author            | Type          | Landing Page                                                                                                                                          |
-| ----------------------------------------------------------------- | ----------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) | black-forest-labs | Text-To-Video | [Run FLUX.1-dev on Novita AI](https://novita.ai/templates/flux1-dev-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| Name                                                         | Author            | Type            | Landing Page                                                 |
+| ------------------------------------------------------------ | ----------------- | --------------- | ------------------------------------------------------------ |
+| [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) | black-forest-labs | Text-To-Video   | [Run FLUX.1-dev on Novita AI](https://novita.ai/templates/flux1-dev-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| [Gemma-2-2b](https://huggingface.co/google/gemma-2-2b-it)    | Google            | Text-To-Text    | [Run Gemma-2-2b on Novita AI](https://novita.ai/templates/run-gemma-2-2b-it-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| [Facefusion](https://github.com/facefusion/facefusion)       | facefusion        | Images & Videos | [Run Facefusion on Novita AI](https://novita.ai/templates/run-facefusion-v2-6-0-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) | AUTOMATIC1111     | Text-To-Image   | [Run stable diffusion webui on Novita AI](https://novita.ai/templates/run-stable-diffusion-v1-8-0-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| [Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct) | Meta              | Text-To-Text    | [Run Llama 3.1 8B Instruct on Novita AI](https://novita.ai/templates/run-meta-llama-3-1-8b-instruct-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
 
 
 
@@ -40,9 +44,13 @@ List of all models on Novita AI
 
 List of all Frameworks on Novita AI
 
-| Name                                                | Author    | Type | Landing Page                                                                                                                                         |
-| --------------------------------------------------- | --------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [KoboldCpp](https://github.com/LostRuins/koboldcpp) | LostRuins | LLM  | [Run KoboldCpp on Novita AI](https://novita.ai/templates/koboldcpp-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| Name                                                         | Author           | Type             | Landing Page                                                 |
+| ------------------------------------------------------------ | ---------------- | ---------------- | ------------------------------------------------------------ |
+| [KoboldCpp](https://github.com/LostRuins/koboldcpp)          | LostRuins        | LLM              | [Run KoboldCpp on Novita AI](https://novita.ai/templates/koboldcpp-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| [Axolotl](https://github.com/axolotl-ai-cloud/axolotl)       | axolotl-ai-cloud | fine-tuning tool | [Run Axolotl on Novita AI](https://novita.ai/templates/axolotl-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| [PyTorch](https://github.com/pytorch/pytorch)                | PyTorch          | Machine Learning | [Run Pytorch on Novita AI](https://novita.ai/templates/run-pytorch-v2-2-1-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| [TensorFlow](https://github.com/tensorflow/tensorflow)       | TensorFlow       | Machine Learning | [Run Tensorflow on Novita AI](https://novita.ai/templates/run-tensorflow-2-7-0-on-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
+| [Ollama-Open-WebUI](https://github.com/open-webui/open-webui) | Open WebUI       | LLM              | [Run Ollma Open WebUI on Novita AI](https://novita.ai/templates/run-meta-llama-3-1-8b-instruct-novita-ai?utm_source=github_template&utm_medium=readme&utm_campaign=catalogue) |
 
 
 
@@ -100,7 +108,7 @@ We welcome your valuable feedback and creativity. Our team is always ready to co
 
 **Get in Touch:**
 
-- Email: [support@novita.ai](mailto:marketing@novita.ai)
+- Email: [marketing@novita.ai](mailto:marketing@novita.ai)
 
 - Discord: [novita.ai](https://discord.com/invite/a3vd9r3uET)
 
