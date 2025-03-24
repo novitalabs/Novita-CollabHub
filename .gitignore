@@ -1,3 +1,4 @@
 # MDX source files - only commit compiled MD files
 README.mdx
 generate.js
+.DS_Store
