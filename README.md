@@ -1,5 +1,5 @@
 <div align="center">
-<img width="200px" src="static/logo.png" alt="Novita CollabHub">
+<img width="500px" src="static/logo.png" alt="Novita CollabHub" />
 
 [𝕏 Follow me on X](https://x.com/novita_labs?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab) • [🤗 Hugging Face](https://huggingface.co/novita?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab) • [💻 Docs](https://novita.ai/docs/guides/introduction?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab)
 
