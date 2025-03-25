@@ -26,49 +26,49 @@ Integrate the Novita API into popular software and platforms. Access [Novita](ht
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://github.com/huggingface"><img src="static/hf.png" /></a></td>
+      <td width="200"><a href="https://github.com/huggingface"><img src="static/hf.png" /></a></td>
       <td>Hugging Face is a library that provides pre-trained language models for NLP tasks. Novita is one of the inference providers of Hugging Face.</td>
-      <td><a href="https://novita.ai/docs/guides/huggingface/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Hugging Face Integration Guide</a></td>
+      <td width="200"><a href="https://novita.ai/docs/guides/huggingface/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Hugging Face Integration Guide</a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/langchain-ai/langchain"><img src="static/langchain.png" /></a></td>
+      <td width="200"><a href="https://github.com/langchain-ai/langchain"><img src="static/langchain.png" /></a></td>
       <td>LangChain is a framework for developing applications powered by large language models (LLMs).</td>
-      <td><a href="https://novita.ai/docs/guides/langchain/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & LangChain Integration Guide</a></td>
+      <td width="200"><a href="https://novita.ai/docs/guides/langchain/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & LangChain Integration Guide</a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/lobehub/lobe-chat"><img src="static/lobechat.png" /></a></td>
+      <td width="200"><a href="https://github.com/lobehub/lobe-chat"><img src="static/lobechat.png" /></a></td>
       <td>LobeChat is an open-source, modern-design AI chat framework.</td>
-      <td><a href="https://novita.ai/docs/guides/lobechat/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & LobeChat Integration Guide</a></td>
+      <td width="200"><a href="https://novita.ai/docs/guides/lobechat/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & LobeChat Integration Guide</a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/langgenius/dify"><img src="static/dify.png" /></a></td>
+      <td width="200"><a href="https://github.com/langgenius/dify"><img src="static/dify.png" /></a></td>
       <td>Dify is an open-source LLM app development platform.</td>
-      <td><a href="https://novita.ai/docs/guides/dify/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Dify Integration Guide</a></td>
+      <td width="200"><a href="https://novita.ai/docs/guides/dify/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Dify Integration Guide</a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/langflow-ai/langflow"><img src="static/langflow.png" /></a></td>
+      <td width="200"><a href="https://github.com/langflow-ai/langflow"><img src="static/langflow.png" /></a></td>
       <td>Langflow is a low-code app builder for RAG and multi-agent AI applications.</td>
-      <td><a href="https://novita.ai/docs/guides/langflow/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Langflow Integration Guide</a></td>
+      <td width="200"><a href="https://novita.ai/docs/guides/langflow/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Langflow Integration Guide</a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/Mintplex-Labs/anything-llm"><img src="static/anythingllm.png" /></a></td>
+      <td width="200"><a href="https://github.com/Mintplex-Labs/anything-llm"><img src="static/anythingllm.png" /></a></td>
       <td>AnythingLLM is an all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, and more.</td>
-      <td><a href="https://novita.ai/docs/guides/anythingllm/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & AnythingLLM Integration Guide</a></td>
+      <td width="200"><a href="https://novita.ai/docs/guides/anythingllm/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & AnythingLLM Integration Guide</a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/continuedev/continue"><img src="static/continue.png" /></a></td>
+      <td width="200"><a href="https://github.com/continuedev/continue"><img src="static/continue.png" /></a></td>
       <td>Continue is the leading open-source AI code assistant.</td>
-      <td><a href="https://novita.ai/docs/guides/continue/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Continue Integration Guide</a></td>
+      <td width="200"><a href="https://novita.ai/docs/guides/continue/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Continue Integration Guide</a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/Skyvern-AI/skyvern"><img src="static/skyvern.png" /></a></td>
+      <td width="200"><a href="https://github.com/Skyvern-AI/skyvern"><img src="static/skyvern.png" /></a></td>
       <td>Skyvern can automate browser-based workflows with LLMs and Computer Vision.</td>
-      <td><a href="https://novita.ai/docs/guides/skyvern/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Skyvern Integration Guide</a></td>
+      <td width="200"><a href="https://novita.ai/docs/guides/skyvern/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Skyvern Integration Guide</a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/Helicone/helicone"><img src="static/helicone.png" /></a></td>
+      <td width="200"><a href="https://github.com/Helicone/helicone"><img src="static/helicone.png" /></a></td>
       <td>Helicone is an open-source LLM observability platform.</td>
-      <td><a href="https://novita.ai/docs/guides/helicone/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Helicone Integration Guide</a></td>
+      <td width="200"><a href="https://novita.ai/docs/guides/helicone/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Helicone Integration Guide</a></td>
     </tr>
   </tbody>
 </table>
