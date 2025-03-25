@@ -12,6 +12,11 @@
 Integrate the Novita API into popular software and platforms. Access [Novita](https://novita.ai/settings/key-management?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab) to get an API key.
 
 <table>
+  <colgroup>
+    <col width="100" />
+    <col width="350" />
+    <col width="200" />
+  </colgroup>
   <thead>
     <tr>
       <th><strong>Repo</strong></th>
@@ -73,6 +78,11 @@ Integrate the Novita API into popular software and platforms. Access [Novita](ht
 Templates are Docker container images paired with a configuration. They are used to launch images as instances, define the required container disk size, volume, volume paths, and ports needed. You can also define environment variables within the template.
 
 <table>
+  <colgroup>
+    <col width="100" />
+    <col width="350" />
+    <col width="200" />
+  </colgroup>
   <thead>
     <tr>
       <th><strong>Repo</strong></th>
