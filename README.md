@@ -23,7 +23,7 @@ Integrate the Novita API into popular software and platforms. Access [Novita](ht
 | ![](static/skyvern.png)<br/> | Skyvern can automate browser-based workflows with LLMs and Computer Vision.<br/>                                                                  | [https://github.com/Skyvern-AI/skyvern](https://github.com/Skyvern-AI/skyvern)<br/>                                                                                                  | [Novita AI & Skyvern Integration Guide](https://novita.ai/docs/guides/skyvern/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab)<br/>          |
 | ![](static/helicone.png)<br/> | Helicone is an open-source LLM observability platform.<br/>                                                                                       | [https://github.com/Helicone/helicone](https://github.com/Helicone/helicone)<br/>                                                                                                        | [Novita AI & Helicone Integration Guide](https://novita.ai/docs/guides/helicone/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab)<br/><br/>   |
 
-## **Novita Instance Templates**
+## **Novita ****Instance Templates**
 
 Templates are Docker container images paired with a configuration. They are used to launch images as instances, define the required container disk size, volume, volume paths, and ports needed. You can also define environment variables within the template.
 
@@ -41,13 +41,13 @@ Templates are Docker container images paired with a configuration. They are used
 
 ## **Getting Started**
 
-Learn about how to use Novita AI in the [docs](https://novita.ai/docs/guides/introduction/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab).
+Learn about how to use Novita AI in the docs[here](https://novita.ai/docs/guides/introduction/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab).
 
 ## **License**
 
 [https://opensource.org/license/MIT](https://opensource.org/license/MIT)
 
-## **Get in Touch**
+## **Get in Touch **
 
 - Email:  [iris@novita.ai](mailto:iris@novita.ai)
 - Discord: [novita.ai](https://discord.com/invite/a3vd9r3uET)
