@@ -15,8 +15,8 @@ Integrate the Novita API into popular software and platforms. Access [Novita](ht
   <colgroup>
     <col width="170" />
     <col width="350" />
-    <col width="200" />
-    <col width="200" />
+    <col width="100" />
+    <col width="100" />
   </colgroup>
   <thead>
     <tr>
