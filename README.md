@@ -12,74 +12,58 @@
 Integrate the Novita API into popular software and platforms. Access [Novita](https://novita.ai/settings/key-management?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab) to get an API key.
 
 <table>
-  <colgroup>
-    <col width="170" />
-    <col width="350" />
-    <col width="100" />
-    <col width="100" />
-  </colgroup>
   <thead>
     <tr>
       <th><strong>Repo</strong></th>
       <th><strong>Description</strong></th>
-      <th><strong>Link</strong></th>
       <th><strong>Guide</strong></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><img src="static/hf.png" /></td>
+      <td><a href="https://github.com/huggingface"><img src="static/hf.png" /></a></td>
       <td>Hugging Face is a library that provides pre-trained language models for NLP tasks. Novita is one of the inference providers of Hugging Face.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a width="100" href="https://github.com/huggingface" style="display: inline-block; word-break: break-word;">https://github.com/huggingface</a><br/><a width="100" href="https://huggingface.co/models?inference_provider=novita" style="display: inline-block; word-break: break-word;">https://huggingface.co/models?inference_provider=novita</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/docs/guides/huggingface/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & Hugging Face Integration Guide</a></td>
+      <td><a href="https://novita.ai/docs/guides/huggingface/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Hugging Face Integration Guide</a></td>
     </tr>
     <tr>
-      <td><img src="static/langchain.png" /></td>
+      <td><a href="https://github.com/langchain-ai/langchain"><img src="static/langchain.png" /></a></td>
       <td>LangChain is a framework for developing applications powered by large language models (LLMs).</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a width="100" href="https://github.com/langchain-ai/langchain" style="display: inline-block; word-break: break-word;">https://github.com/langchain-ai/langchain</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a width="100" href="https://novita.ai/docs/guides/langchain/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & LangChain Integration Guide</a></td>
+      <td><a href="https://novita.ai/docs/guides/langchain/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & LangChain Integration Guide</a></td>
     </tr>
     <tr>
-      <td><img src="static/lobechat.png" /></td>
+      <td><a href="https://github.com/lobehub/lobe-chat"><img src="static/lobechat.png" /></a></td>
       <td>LobeChat is an open-source, modern-design AI chat framework.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/lobehub/lobe-chat" style="display: inline-block; word-break: break-word;">https://github.com/lobehub/lobe-chat</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/docs/guides/lobechat/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & LobeChat Integration Guide</a></td>
+      <td><a href="https://novita.ai/docs/guides/lobechat/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & LobeChat Integration Guide</a></td>
     </tr>
     <tr>
-      <td><img src="static/dify.png" /></td>
+      <td><a href="https://github.com/langgenius/dify"><img src="static/dify.png" /></a></td>
       <td>Dify is an open-source LLM app development platform.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/langgenius/dify" style="display: inline-block; word-break: break-word;">https://github.com/langgenius/dify</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/docs/guides/dify/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & Dify Integration Guide</a></td>
+      <td><a href="https://novita.ai/docs/guides/dify/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Dify Integration Guide</a></td>
     </tr>
     <tr>
-      <td><img src="static/langflow.png" /></td>
+      <td><a href="https://github.com/langflow-ai/langflow"><img src="static/langflow.png" /></a></td>
       <td>Langflow is a low-code app builder for RAG and multi-agent AI applications.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/langflow-ai/langflow" style="display: inline-block; word-break: break-word;">https://github.com/langflow-ai/langflow</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/docs/guides/langflow/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & Langflow Integration Guide</a></td>
+      <td><a href="https://novita.ai/docs/guides/langflow/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Langflow Integration Guide</a></td>
     </tr>
     <tr>
-      <td><img src="static/anythingllm.png" /></td>
+      <td><a href="https://github.com/Mintplex-Labs/anything-llm"><img src="static/anythingllm.png" /></a></td>
       <td>AnythingLLM is an all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, and more.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/Mintplex-Labs/anything-llm" style="display: inline-block; word-break: break-word;">https://github.com/Mintplex-Labs/anything-llm</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/docs/guides/anythingllm/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & AnythingLLM Integration Guide</a></td>
+      <td><a href="https://novita.ai/docs/guides/anythingllm/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & AnythingLLM Integration Guide</a></td>
     </tr>
     <tr>
-      <td><img src="static/continue.png" /></td>
+      <td><a href="https://github.com/continuedev/continue"><img src="static/continue.png" /></a></td>
       <td>Continue is the leading open-source AI code assistant.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/continuedev/continue" style="display: inline-block; word-break: break-word;">https://github.com/continuedev/continue</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/docs/guides/continue/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & Continue Integration Guide</a></td>
+      <td><a href="https://novita.ai/docs/guides/continue/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Continue Integration Guide</a></td>
     </tr>
     <tr>
-      <td><img src="static/skyvern.png" /></td>
+      <td><a href="https://github.com/Skyvern-AI/skyvern"><img src="static/skyvern.png" /></a></td>
       <td>Skyvern can automate browser-based workflows with LLMs and Computer Vision.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/Skyvern-AI/skyvern" style="display: inline-block; word-break: break-word;">https://github.com/Skyvern-AI/skyvern</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/docs/guides/skyvern/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & Skyvern Integration Guide</a></td>
+      <td><a href="https://novita.ai/docs/guides/skyvern/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Skyvern Integration Guide</a></td>
     </tr>
     <tr>
-      <td><img src="static/helicone.png" /></td>
+      <td><a href="https://github.com/Helicone/helicone"><img src="static/helicone.png" /></a></td>
       <td>Helicone is an open-source LLM observability platform.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/Helicone/helicone" style="display: inline-block; word-break: break-word;">https://github.com/Helicone/helicone</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/docs/guides/helicone/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & Helicone Integration Guide</a></td>
+      <td><a href="https://novita.ai/docs/guides/helicone/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Novita AI & Helicone Integration Guide</a></td>
     </tr>
   </tbody>
 </table>
@@ -89,74 +73,58 @@ Integrate the Novita API into popular software and platforms. Access [Novita](ht
 Templates are Docker container images paired with a configuration. They are used to launch images as instances, define the required container disk size, volume, volume paths, and ports needed. You can also define environment variables within the template.
 
 <table>
-  <colgroup>
-    <col width="170" />
-    <col width="350" />
-    <col width="200" />
-    <col width="200" />
-  </colgroup>
   <thead>
     <tr>
       <th><strong>Repo</strong></th>
       <th><strong>Description</strong></th>
-      <th><strong>Link</strong></th>
       <th><strong>Template</strong></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><img src="static/vllm.png" /></td>
+      <td><a href="https://github.com/vllm-project/vllm"><img src="static/vllm.png" /></a></td>
       <td>vLLM is a high-throughput and memory-efficient inference and serving engine for LLMs.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/vllm-project/vllm">https://github.com/vllm-project/vllm</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/gpus-console/explore?templateId=304?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run DeepSeek-R1-Distill-Qwen-1.5B with vLLM on Novita</a></td>
+      <td><a href="https://novita.ai/gpus-console/explore?templateId=304?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run DeepSeek-R1-Distill-Qwen-1.5B with vLLM on Novita</a></td>
     </tr>
     <tr>
-      <td><img src="static/sglang.png" /></td>
+      <td><a href="https://github.com/sgl-project/sglang"><img src="static/sglang.png" /></a></td>
       <td>SGLang is a fast serving framework for large language models and vision language models.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/sgl-project/sglang">https://github.com/sgl-project/sglang</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/gpus-console/explore?templateId=310?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run Llama3.1-8B-Instruct with SGLang on Novita</a></td>
+      <td><a href="https://novita.ai/gpus-console/explore?templateId=310?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run Llama3.1-8B-Instruct with SGLang on Novita</a></td>
     </tr>
     <tr>
-      <td><img src="static/tensorflow.png" /></td>
+      <td><a href="https://github.com/tensorflow/tensorflow"><img src="static/tensorflow.png" /></a></td>
       <td>TensorFlow is an open-source machine learning framework for everyone.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/tensorflow/tensorflow">https://github.com/tensorflow/tensorflow</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/gpus-console/explore?templateId=269?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run Tensorflow:2.7.0 on Novita</a></td>
+      <td><a href="https://novita.ai/gpus-console/explore?templateId=269?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run Tensorflow:2.7.0 on Novita</a></td>
     </tr>
     <tr>
-      <td><img src="static/pytorch.png" /></td>
+      <td><a href="https://github.com/pytorch/pytorch"><img src="static/pytorch.png" /></a></td>
       <td>PyTorch offers tensors and dynamic neural networks in Python with strong GPU acceleration.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/pytorch/pytorch">https://github.com/pytorch/pytorch</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/gpus-console/explore?templateId=268?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run Pytorch:2.2.1 on Novita</a></td>
+      <td><a href="https://novita.ai/gpus-console/explore?templateId=268?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run Pytorch:2.2.1 on Novita</a></td>
     </tr>
     <tr>
-      <td><img src="static/flux.png" /></td>
+      <td><a href="https://github.com/black-forest-labs/flux"><img src="static/flux.png" /></a></td>
       <td>Flux contains minimal inference code to run image generation & editing with our Flux models.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/black-forest-labs/flux">https://github.com/black-forest-labs/flux</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/gpus-console/explore?templateId=301?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run comfyui:flux1-fp8 with Flux on Novita AI</a></td>
+      <td><a href="https://novita.ai/gpus-console/explore?templateId=301?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run comfyui:flux1-fp8 with Flux on Novita AI</a></td>
     </tr>
     <tr>
-      <td><img src="static/stable-diffusion.png" /></td>
+      <td><a href="https://github.com/Stability-AI/stablediffusion"><img src="static/stable-diffusion.png" /></a></td>
       <td>Stabel Diffusion offers high-resolution image synthesis with latent diffusion models.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/Stability-AI/stablediffusion">https://github.com/Stability-AI/stablediffusion</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/gpus-console/explore?templateId=298?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run StableDiffusion:v1.8.0 on Novita AI</a></td>
+      <td><a href="https://novita.ai/gpus-console/explore?templateId=298?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run StableDiffusion:v1.8.0 on Novita AI</a></td>
     </tr>
     <tr>
-      <td><img src="static/face-fusion.png" /></td>
+      <td><a href="https://github.com/facefusion/facefusion"><img src="static/face-fusion.png" /></a></td>
       <td>FaceFusion is the industry-leading face manipulation platform.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/facefusion/facefusion">https://github.com/facefusion/facefusion</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/gpus-console/explore?templateId=299?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run Facefusion:v3.1.1  on Novita AI</a></td>
+      <td><a href="https://novita.ai/gpus-console/explore?templateId=299?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run Facefusion:v3.1.1  on Novita AI</a></td>
     </tr>
     <tr>
-      <td><img src="static/cuda-samples.png" /></td>
+      <td><a href="https://github.com/NVIDIA/cuda-samples"><img src="static/cuda-samples.png" /></a></td>
       <td>CUDA-Samples offer samples for CUDA Developers which demonstrate features in CUDA Toolkit.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/NVIDIA/cuda-samples">https://github.com/NVIDIA/cuda-samples</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/gpus-console/explore?templateId=270?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run cuda:11.8.0 with CUDA-Samples on Novita AI</a></td>
+      <td><a href="https://novita.ai/gpus-console/explore?templateId=270?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run cuda:11.8.0 with CUDA-Samples on Novita AI</a></td>
     </tr>
     <tr>
-      <td><img src="static/kobold-cpp.png" /></td>
+      <td><a href="https://github.com/LostRuins/koboldcpp"><img src="static/kobold-cpp.png" /></a></td>
       <td>KoboldCpp runs GGUF models easily with a KoboldAI UI with one file and zero Install.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/LostRuins/koboldcpp">https://github.com/LostRuins/koboldcpp</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/gpus-console/explore?templateId=300&productId=4/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run KoboldCpp on Novita AI</a></td>
+      <td><a href="https://novita.ai/gpus-console/explore?templateId=300&productId=4/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab">Run KoboldCpp on Novita AI</a></td>
     </tr>
   </tbody>
 </table>
