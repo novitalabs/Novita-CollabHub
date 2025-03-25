@@ -30,14 +30,14 @@ Integrate the Novita API into popular software and platforms. Access [Novita](ht
     <tr>
       <td><img src="static/hf.png" /></td>
       <td>Hugging Face is a library that provides pre-trained language models for NLP tasks. Novita is one of the inference providers of Hugging Face.</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/huggingface" style="display: inline-block; word-break: break-word;">https://github.com/huggingface</a><br/><a href="https://huggingface.co/models?inference_provider=novita" style="display: inline-block; word-break: break-word;">https://huggingface.co/models?inference_provider=novita</a></td>
+      <td style="word-break: break-word; overflow-wrap: break-word;"><a width="100" href="https://github.com/huggingface" style="display: inline-block; word-break: break-word;">https://github.com/huggingface</a><br/><a width="100" href="https://huggingface.co/models?inference_provider=novita" style="display: inline-block; word-break: break-word;">https://huggingface.co/models?inference_provider=novita</a></td>
       <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/docs/guides/huggingface/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & Hugging Face Integration Guide</a></td>
     </tr>
     <tr>
       <td><img src="static/langchain.png" /></td>
       <td>LangChain is a framework for developing applications powered by large language models (LLMs).</td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://github.com/langchain-ai/langchain" style="display: inline-block; word-break: break-word;">https://github.com/langchain-ai/langchain</a></td>
-      <td style="word-break: break-word; overflow-wrap: break-word;"><a href="https://novita.ai/docs/guides/langchain/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & LangChain Integration Guide</a></td>
+      <td style="word-break: break-word; overflow-wrap: break-word;"><a width="100" href="https://github.com/langchain-ai/langchain" style="display: inline-block; word-break: break-word;">https://github.com/langchain-ai/langchain</a></td>
+      <td style="word-break: break-word; overflow-wrap: break-word;"><a width="100" href="https://novita.ai/docs/guides/langchain/?utm_source=github_collabhub&utm_medium=readme&utm_campaign=collab" style="display: inline-block; word-break: break-word;">Novita AI & LangChain Integration Guide</a></td>
     </tr>
     <tr>
       <td><img src="static/lobechat.png" /></td>
