@@ -14,7 +14,7 @@ Integrate the Novita API into popular software and platforms. Access [Novita](ht
 <table>
   <colgroup>
     <col width="100" />
-    <col width="350" />
+    <col />
     <col width="200" />
   </colgroup>
   <thead>
@@ -80,7 +80,7 @@ Templates are Docker container images paired with a configuration. They are used
 <table>
   <colgroup>
     <col width="100" />
-    <col width="350" />
+    <col />
     <col width="200" />
   </colgroup>
   <thead>
