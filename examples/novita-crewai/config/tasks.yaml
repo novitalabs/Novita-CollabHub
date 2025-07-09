@@ -1,0 +1,44 @@
+research_task:
+  description: >
+    Conduct thorough research on {topic}. Focus on:
+    1. Key concepts and definitions
+    2. Historical development and recent trends
+    3. Major challenges and opportunities
+    4. Notable applications or case studies
+    5. Future outlook and potential developments
+
+    Make sure to organize your findings in a structured format with clear sections.
+  expected_output: >
+    A comprehensive research document with well-organized sections covering
+    all the requested aspects of {topic}. Include specific facts, figures,
+    and examples where relevant.
+  agent: researcher
+
+outline_task:
+  description: >
+    Based on the research findings, create a detailed outline for a research article.
+    The outline should:
+    1. Include an introduction and conclusion
+    2. Clearly structure the main body with logical headings and subheadings
+    3. Ensure the flow of information builds progressively and coherently
+    4. Align with the expected audience (e.g., technical, general)
+  expected_output: >
+    A clean, detailed outline with clear headings and subheadings that reflects
+    the structure of the future article.
+  agent: outliner
+  context:
+    - research_task
+
+writing_task:
+  description: >
+    Use the research findings and the outline to write a comprehensive,
+    engaging, and well-structured research article on {topic}.
+  expected_output: >
+    A polished article written in markdown format with clear sections, strong
+    narrative flow, and citations or links to data sources if applicable.
+  agent: writer
+  context:
+    - research_task
+    - outline_task
+  output_file: research_article.md
+
