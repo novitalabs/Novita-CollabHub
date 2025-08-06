@@ -1,0 +1,12 @@
+# Core dependencies
+browser-use
+e2b-code-interpreter
+requests
+python-dotenv
+
+# Optional dependencies
+websockets
+
+# Development dependencies (uncomment if needed)
+# pytest
+# pytest-asyncio

@@ -1,0 +1,9 @@
+.venv
+.DS_Store
+screenshots/
+
+.env
+storage_*.json
+storage_*.json.bak
+
+node_modules
