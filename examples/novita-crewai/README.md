@@ -15,20 +15,18 @@ This repository demonstrates how to build a Multi-Agent System using [Novita](ht
 ## Overview
 
 This repo contains two multi-agent system implementations:
-- **Research Crew**: A class-based crew of agents that perform research tasks.
+- **Code Crew**: A class-based crew of agents that can build a simple MVP.
 - **Customer Support Flow**: A flow-based agent for customer support automation.
 
 ## Project Structure
 
 ```
-crew.py                # Class-based crew for research tasks
+crew.py                # Class-based crew for generating an MVP code base
 flow.py                # Flow-based customer support agent
-old_crew.py            # Legacy crew definition
 config/
   ├── agents.yaml      # Agent definitions
   └── tasks.yaml       # Task definitions
 README.md
-CustomerSupportFlowPlot.html
 ```
 
 ## Prerequisites
@@ -42,7 +40,7 @@ CustomerSupportFlowPlot.html
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/Studio1HQ/novita_crewai.git
+   git clone https://github.com/Studio1HQ/code_crewai.git
    cd novita_crewai
    ```
 
@@ -54,7 +52,7 @@ CustomerSupportFlowPlot.html
 
 3. **Install dependencies:**
    ```sh
-   pip install crewai novita
+   pip install 'crewai[tools]' novita
    ```
 
 ## Configuration
@@ -74,7 +72,7 @@ CustomerSupportFlowPlot.html
 
 ## Usage
 
-- **Run the research crew:**
+- **Run the code crew:**
   ```sh
   python crew.py
   ```
@@ -84,19 +82,8 @@ CustomerSupportFlowPlot.html
   python flow.py
   ```
 
-- **Legacy crew (for reference):**
-  ```sh
-  python old_crew.py
-  ```
-
 ## References
 
 - [CrewAI Documentation](https://docs.crewai.com/)
 - [Novita API Documentation](https://novita.ai/docs/guides/introduction)
 - [CrewAI Examples](https://docs.crewai.com/en/examples/example)
-
-
-
-
-
-
