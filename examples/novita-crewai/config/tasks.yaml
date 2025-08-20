@@ -1,44 +1,36 @@
-research_task:
+architect_task:
   description: >
-    Conduct thorough research on {topic}. Focus on:
-    1. Key concepts and definitions
-    2. Historical development and recent trends
-    3. Major challenges and opportunities
-    4. Notable applications or case studies
-    5. Future outlook and potential developments
-
-    Make sure to organize your findings in a structured format with clear sections.
+    Create a basic plan for building a simple MVP version of a {project}.
+    Focus on the core features, basic file structure, and tech stack.
+    Make the structure minimal but enough to get a working demo.
   expected_output: >
-    A comprehensive research document with well-organized sections covering
-    all the requested aspects of {topic}. Include specific facts, figures,
-    and examples where relevant.
-  agent: researcher
+    A simple architectural overview with:
+    - Project goals
+    - Key components or files
+    - Basic data flow or structure
+  agent: architect
+  output_file: architecture.md
 
-outline_task:
+coder_task:
   description: >
-    Based on the research findings, create a detailed outline for a research article.
-    The outline should:
-    1. Include an introduction and conclusion
-    2. Clearly structure the main body with logical headings and subheadings
-    3. Ensure the flow of information builds progressively and coherently
-    4. Align with the expected audience (e.g., technical, general)
+    Based on the architect's plan, implement the core parts of the {project} MVP.
+    Keep it lean and functional. Use the FileWriter tool to save all your code files.
+    If you need to simulate behavior (e.g. without a real interpreter), do so with clear comments or mocked logic.
   expected_output: >
-    A clean, detailed outline with clear headings and subheadings that reflects
-    the structure of the future article.
-  agent: outliner
+    Working code files saved using the FileWriter tool that implement the key features defined in the plan.
+    Code should be readable and logically structured.
+  agent: coder
   context:
-    - research_task
+    - architect_task
 
-writing_task:
+review_task:
   description: >
-    Use the research findings and the outline to write a comprehensive,
-    engaging, and well-structured research article on {topic}.
+    Review the code files created for the {project} MVP. Read each file using the FileRead tool.
+    Suggest improvements using diffs. Do not modify the original code files directly.
+    Instead, save all your suggested diffs into a markdown file using the FileWriter tool.
   expected_output: >
-    A polished article written in markdown format with clear sections, strong
-    narrative flow, and citations or links to data sources if applicable.
-  agent: writer
+    A markdown file containing diff-style suggestions for each file reviewed.
+  agent: reviewer
   context:
-    - research_task
-    - outline_task
-  output_file: research_article.md
-
+    - coder_task
+  output_file: code_review_diffs.md
