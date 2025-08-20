@@ -4,69 +4,75 @@ from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
 from typing import List
 
+from crewai_tools import FileWriterTool
+
+# Instantiate tool
+file_writer_tool = FileWriterTool()
+
+
 @CrewBase
-class ResearchCrew():
-    """Three-agent research crew: researcher, outliner, writer"""
+class CodeCrew():
 
     agents: List[BaseAgent]
     tasks: List[Task]
 
     agents_config = 'config/agents.yaml'
     tasks_config = 'config/tasks.yaml'
-
+    
     @agent
-    def researcher(self) -> Agent:
+    def architect(self) -> Agent:
         llm = LLM(
-            model="novita/deepseek/deepseek-r1-turbo",
+            model="novita/moonshotai/kimi-k2-instruct",
             temperature=0.5,
             api_base="https://api.novita.ai/v3/openai",
             api_key=os.environ['NOVITA_API_KEY']
         )
         return Agent(
-            config=self.agents_config['researcher'],
+            config=self.agents_config['architect'],
             llm=llm,
             verbose=True
         )
 
     @agent
-    def outliner(self) -> Agent:
+    def coder(self) -> Agent:
         llm = LLM(
-            model="novita/meta-llama/llama-3.1-8b-instruct",
+            model="novita/qwen/qwen3-coder-480b-a35b-instruct",
             temperature=0.4,
             api_base="https://api.novita.ai/v3/openai",
             api_key=os.environ['NOVITA_API_KEY']
         )
         return Agent(
-            config=self.agents_config['outliner'],
+            config=self.agents_config['coder'],
             llm=llm,
-            verbose=True
+            verbose=True,
+            tools=[file_writer_tool]
         )
 
     @agent
-    def writer(self) -> Agent:
+    def reviewer(self) -> Agent:
         llm = LLM(
-            model="novita/meta-llama/llama-3.3-70b-instruct",
+            model="novita/moonshotai/kimi-k2-instruct",
             temperature=0.5,
             api_base="https://api.novita.ai/v3/openai",
             api_key=os.environ['NOVITA_API_KEY']
         )
         return Agent(
-            config=self.agents_config['writer'],
+            config=self.agents_config['reviewer'],
             llm=llm,
-            verbose=True
+            verbose=True,
         )
 
     @task
-    def research_task(self) -> Task:
-        return Task(config=self.tasks_config['research_task'])
+    def architect_task(self) -> Task:
+        return Task(config=self.tasks_config['architect_task'])
 
     @task
-    def outline_task(self) -> Task:
-        return Task(config=self.tasks_config['outline_task'])
+    def coder_task(self) -> Task:
+        return Task(config=self.tasks_config['coder_task'])
 
     @task
-    def writing_task(self) -> Task:
-        return Task(config=self.tasks_config['writing_task'])
+    def review_task(self) -> Task:
+        return Task(config=self.tasks_config['review_task'])
 
     @crew
     def crew(self) -> Crew:
@@ -78,8 +84,8 @@ class ResearchCrew():
         )
 
 def main():
-    research_crew = ResearchCrew()
-    research_crew.crew().kickoff(inputs={"topic": "Multi-Agent Systems"})
+    code_crew = CodeCrew()
+    code_crew.crew().kickoff(inputs={"project": "Todo App"})
 
 if __name__ == '__main__':
     main()
