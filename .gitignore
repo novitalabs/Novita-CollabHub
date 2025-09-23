@@ -1,4 +1,13 @@
 # MDX source files - only commit compiled MD files
 README.mdx
 generate.js
+
+# Test files
+examples/sandbox/Download
+
+# OS files
 .DS_Store
+
+# Python environment files
+.venv
+__pycache__
