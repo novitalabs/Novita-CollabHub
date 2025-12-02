@@ -1,0 +1,22 @@
+[project]
+name = "test-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Jason",email = "ggbbddjm@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "novita-sandbox (==1.1.0a33)",
+    "langgraph (>=0.6.7,<0.7.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "langchain-openai (>=0.3.33,<0.4.0)",
+    "langchain-community (>=0.3.29,<0.4.0)",
+    "ddgs (>=9.6.0,<10.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

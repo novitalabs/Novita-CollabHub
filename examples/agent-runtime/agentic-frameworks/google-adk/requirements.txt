@@ -1,0 +1,9 @@
+# Novita Sandbox SDK
+novita-sandbox>=1.1.0b1
+
+# Google Generative AI
+google-adk
+
+# Utilities
+python-dotenv>=1.0.0
+

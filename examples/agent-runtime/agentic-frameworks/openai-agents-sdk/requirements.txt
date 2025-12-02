@@ -1,0 +1,9 @@
+# Novita Sandbox SDK
+novita-sandbox>=1.1.0b1
+
+# OpenAI SDK
+openai>=1.50.0
+
+# Utilities
+python-dotenv>=1.0.0
+
