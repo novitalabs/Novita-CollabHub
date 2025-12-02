@@ -1,6 +1,4 @@
-.DS_Store
-
-# Log files
+# 日志文件
 logs/
 *.log
 
@@ -53,10 +51,3 @@ app_logs
 Dockerfile
 novita.Dockerfile
 novita.toml
-
-# MDX source files - only commit compiled MD files
-README.mdx
-generate.js
-
-# Test files
-examples/sandbox/Download
