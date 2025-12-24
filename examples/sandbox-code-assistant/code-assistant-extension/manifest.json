@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Agent Sandbox",
+  "version": "1.0",
+  "description": "Chat with your Novita AI sandbox agent over WebSocket.",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "ws://localhost:8000/*",
+    "http://localhost:8000/*",
+    "https://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
