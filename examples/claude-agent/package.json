@@ -1,0 +1,31 @@
+{
+  "name": "anthropic-ai-sdk-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "agent": "tsc && node dist/agent.js",
+    "build:cjs": "node build.mjs --skip-pkg",
+    "build:release": "node build.mjs",
+    "clean": "rm -rf dist build release"
+  },
+  "pkg": {
+    "scripts": "build/*.cjs",
+    "assets": [],
+    "outputPath": "release"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "ai": "^6.0.14",
+    "dotenv": "^17.2.3",
+    "novita-sandbox": "^1.0.1",
+    "open": "^11.0.0",
+    "ppio-sandbox": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@yao-pkg/pkg": "^6.11.0",
+    "esbuild": "^0.27.2",
+    "typescript": "^5.7.2"
+  }
+}
