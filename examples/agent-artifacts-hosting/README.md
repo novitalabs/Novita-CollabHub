@@ -59,7 +59,7 @@ DATABASE_URL=postgresql://user:password@host:5432/dbname
 ### 3. Run the Deployment Script
 
 ```bash
-python app.py --template my-ecomm-template --project-name my-webapp --project-dir ecomm-with-sql
+python app.py --template ecomm-with-sql --project-name my-webapp --dockerfile ecomm-with-sql/Dockerfile
 ```
 
 Available arguments:
@@ -68,7 +68,10 @@ Available arguments:
 |----------|-------------|
 | `--template` | Sandbox template name (from step 1) |
 | `--project-name` | Project name, used in the deployment URL |
-| `--project-dir` | Project directory containing the Dockerfile |
+| `--dockerfile` | Path to Dockerfile, relative to this script |
+| `--http-port` | HTTP port the app listens on (default: 3000, use 80 for Nginx) |
+| `--sandbox-timeout` | Sandbox timeout in seconds (default: 600) |
+| `-v` | Enable debug logging |
 
 The script will:
 - Create a sandbox from your template
@@ -80,41 +83,23 @@ The script will:
 ### Example Output
 
 ```
-novita_sandbox version: 1.0.0
-============================================================
-🚀 Starting deployment
-============================================================
-   Template: my-template
-   Project: my-webapp
-   Dockerfile: /path/to/your-project/Dockerfile
+Deploying [my-webapp] with template [ecomm-with-sql]
+  Dockerfile: /path/to/ecomm-with-sql/Dockerfile
+  HTTP port: 3000
+  Env vars: ['NODE_ENV', 'DATABASE_URL']
 
-📦 Step 1: Creating Sandbox...
-✅ Sandbox created: abc123xyz
+[1/3] Creating sandbox...
+  Sandbox ready: abc123xyz
 
-🏗️  Step 2: Setting up project...
-   - Looking for project: my-webapp
-✅ Project created: proj_123
-   URL: https://my-webapp.novita.space
+[2/3] Setting up project...
+  Found existing project: proj_123
 
-🔨 Step 3: Deploying...
-   - Sandbox ID: abc123xyz
-   - Source directory: /app
-   - HTTP port: 3000
+[3/3] Deploying...
+  Status: BUILDING
+  Status: RUNNING
 
-📋 Step 4: Build logs + Status monitoring
-------------------------------------------------------------
-[Build] Step 1/8 : FROM node:20-alpine AS builder
-[Build] Step 2/8 : RUN corepack enable...
-...
-
-📊 Status: RUNNING
-------------------------------------------------------------
-📊 Received 45 log entries
-
-============================================================
-🎉 Deployment successful!
-============================================================
-🌐 URL: https://my-webapp.novita.space
+Deployment successful! (ID: dep_456)
+  URL: https://my-webapp.novita.space
 ```
 
 ## Example Projects
@@ -140,7 +125,7 @@ cd ..
 2. Run the deployment:
 
 ```bash
-python app.py --template ecomm-with-sql --project-name my-ecommerce --project-dir ecomm-with-sql
+python app.py --template ecomm-with-sql --project-name my-ecommerce --dockerfile ecomm-with-sql/Dockerfile
 ```
 
 ## Understanding the Deployment Script
@@ -195,15 +180,21 @@ deployment = project.deploy(
 
 ## Static Sites with Nginx
 
-For static sites (HTML/CSS/JS only), use `nginx.dockerfile`:
+For static sites (HTML/CSS/JS only), use an Nginx-based Dockerfile:
 
 ```dockerfile
-FROM ubuntu:22.04
-RUN apt-get update && apt-get install -y nginx
-RUN rm -rf /var/www/html/*
-COPY . /var/www/html/
+FROM nginx:alpine
+RUN rm -rf /usr/share/nginx/html/*
+COPY . /usr/share/nginx/html/
+RUN chmod -R 755 /usr/share/nginx/html/
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
+```
+
+Since Nginx listens on port 80, pass `--http-port 80`:
+
+```bash
+python app.py --template snake-game-static --project-name my-game --dockerfile snake-game-static/Dockerfile --http-port 80
 ```
 
 ## Troubleshooting
