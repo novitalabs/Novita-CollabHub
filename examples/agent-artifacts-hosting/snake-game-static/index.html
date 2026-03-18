@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake - Retro Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1 class="title">🐍 Snake</h1>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="label">Score</span>
+                    <span class="value" id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">High Score</span>
+                    <span class="value" id="highScore">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            
+            <div class="game-over" id="gameOver">
+                <div class="game-over-content">
+                    <h2>Game Over</h2>
+                    <p class="final-score">Final Score: <span id="finalScore">0</span></p>
+                    <button class="btn-restart" id="restartBtn">Restart</button>
+                </div>
+            </div>
+
+            <div class="game-start" id="gameStart">
+                <div class="game-start-content">
+                    <h2>Snake</h2>
+                    <p class="instructions">Use arrow keys to control the snake</p>
+                    <p class="instructions">Eat food to grow longer</p>
+                    <p class="instructions">Don't hit the wall or bite yourself!</p>
+                    <button class="btn-start" id="startBtn">Start Game</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-info">
+                <p>⬆️ ⬇️ ⬅️ ➡️ Arrow Keys</p>
+                <p>Space to Pause/Resume</p>
+            </div>
+            <div class="mobile-controls" id="mobileControls">
+                <div class="control-row">
+                    <button class="btn-control" data-direction="up">⬆️</button>
+                </div>
+                <div class="control-row">
+                    <button class="btn-control" data-direction="left">⬅️</button>
+                    <button class="btn-control" data-direction="down">⬇️</button>
+                    <button class="btn-control" data-direction="right">➡️</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings">
+            <label class="setting-item">
+                <span>Speed:</span>
+                <select id="speedSelect">
+                    <option value="150">Slow</option>
+                    <option value="100" selected>Medium</option>
+                    <option value="70">Fast</option>
+                    <option value="50">Extreme</option>
+                </select>
+            </label>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

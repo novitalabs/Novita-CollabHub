@@ -1,0 +1,383 @@
+/* Retro Snake Game Styles */
+
+:root {
+    --retro-bg: #0f0f23;
+    --retro-primary: #00ff41;
+    --retro-secondary: #ffff00;
+    --retro-danger: #ff0040;
+    --retro-border: #00ff41;
+    --retro-text: #00ff41;
+    --retro-shadow: rgba(0, 255, 65, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(to bottom, #0f0f23 0%, #1a1a3e 100%);
+    color: var(--retro-text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: auto;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Game Header */
+.game-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 4px solid var(--retro-border);
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px var(--retro-shadow);
+    animation: borderGlow 2s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px var(--retro-shadow);
+    }
+    50% {
+        box-shadow: 0 0 30px var(--retro-shadow), 0 0 40px var(--retro-shadow);
+    }
+}
+
+.title {
+    font-size: 24px;
+    color: var(--retro-secondary);
+    text-shadow: 3px 3px 0 var(--retro-danger), 
+                 0 0 10px var(--retro-secondary);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.score-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label {
+    font-size: 10px;
+    color: var(--retro-text);
+    opacity: 0.8;
+}
+
+.value {
+    font-size: 20px;
+    color: var(--retro-secondary);
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Game Area */
+.game-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: auto;
+    border: 4px solid var(--retro-border);
+    background: #000;
+    display: block;
+    box-shadow: 0 0 30px var(--retro-shadow),
+                inset 0 0 50px rgba(0, 255, 65, 0.1);
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+/* Game Start Screen */
+.game-start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--retro-border);
+    z-index: 10;
+}
+
+.game-start.hidden {
+    display: none;
+}
+
+.game-start-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.game-start-content h2 {
+    font-size: 28px;
+    color: var(--retro-secondary);
+    text-shadow: 3px 3px 0 var(--retro-danger);
+    margin-bottom: 30px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.instructions {
+    font-size: 10px;
+    color: var(--retro-text);
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Game Over Screen */
+.game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--retro-danger);
+    z-index: 10;
+    animation: gameOverAppear 0.3s ease-out;
+}
+
+@keyframes gameOverAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.game-over.show {
+    display: flex;
+}
+
+.game-over-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.game-over-content h2 {
+    font-size: 24px;
+    color: var(--retro-danger);
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+.final-score {
+    font-size: 14px;
+    color: var(--retro-text);
+    margin: 20px 0;
+}
+
+/* Button Styles */
+.btn-start,
+.btn-restart {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    padding: 15px 30px;
+    background: var(--retro-primary);
+    color: #000;
+    border: 3px solid var(--retro-primary);
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease;
+}
+
+.btn-start:hover,
+.btn-restart:hover {
+    background: var(--retro-secondary);
+    border-color: var(--retro-secondary);
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn-start:active,
+.btn-restart:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Controls Area */
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.control-info {
+    padding: 15px;
+    border: 2px solid var(--retro-border);
+    background: rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+}
+
+.control-info p {
+    font-size: 10px;
+    margin: 8px 0;
+    color: var(--retro-text);
+    opacity: 0.9;
+}
+
+/* Mobile Control Buttons */
+.mobile-controls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid var(--retro-border);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.control-row {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-control {
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    background: var(--retro-primary);
+    border: 3px solid var(--retro-border);
+    cursor: pointer;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease;
+    user-select: none;
+}
+
+.btn-control:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Settings Area */
+.settings {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid var(--retro-border);
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.setting-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+    color: var(--retro-text);
+}
+
+#speedSelect {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    padding: 8px 12px;
+    background: #000;
+    color: var(--retro-text);
+    border: 2px solid var(--retro-border);
+    cursor: pointer;
+    outline: none;
+}
+
+#speedSelect:focus {
+    box-shadow: 0 0 10px var(--retro-shadow);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 18px;
+    }
+    
+    .value {
+        font-size: 16px;
+    }
+    
+    .mobile-controls {
+        display: flex;
+    }
+    
+    .control-info {
+        display: none;
+    }
+    
+    .game-start-content h2 {
+        font-size: 20px;
+    }
+    
+    .instructions {
+        font-size: 8px;
+    }
+    
+    .btn-start,
+    .btn-restart {
+        font-size: 10px;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .title {
+        font-size: 14px;
+    }
+    
+    .label {
+        font-size: 8px;
+    }
+    
+    .value {
+        font-size: 14px;
+    }
+    
+    .btn-control {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}

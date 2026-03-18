@@ -1,0 +1,72 @@
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Python cache
+__pycache__/
+__pycache__*
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+.env
+venv/
+env/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage*
+htmlcov/
+.tox/
+*.cover
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+
+# Development
+*.log
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Project specific
+tests/
+
+# Novita Agent Runtime specific
+.novita-agent.yaml
+.dockerignore
+e2b.Dockerfile
+novita.Dockerfile
+node_modules/
+
+# OS specific
+Thumbs.db
+.DS_Store

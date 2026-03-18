@@ -1,0 +1,2 @@
+novita-sandbox>=1.2.0b1
+python-dotenv>=1.0.0
