@@ -12,7 +12,6 @@ import sys
 from pathlib import Path
 
 import dotenv
-dotenv.load_dotenv()
 
 from novita_sandbox.code_interpreter import Sandbox
 from novita_sandbox.artifact_hosting import DeploymentClient, is_successful
@@ -23,6 +22,13 @@ ARTI_DIR = "/app"
 ENV_KEYS = ["NODE_ENV", "DATABASE_URL", "OAUTH_SERVER_URL", "OAUTH_API_SERVER_URL", "APP_SECRET"]
 
 
+def load_local_env(base_dir: Path = SCRIPT_DIR):
+    dotenv.load_dotenv(base_dir / ".env", override=True)
+
+
+load_local_env()
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Deploy via Novita Artifact Hosting SDK")
     parser.add_argument("--template", required=True, help="Sandbox template name")
@@ -30,6 +36,12 @@ def parse_args():
     parser.add_argument("--dockerfile", required=True, help="Path to Dockerfile (relative to this script)")
     parser.add_argument("--http-port", type=int, default=3000, help="HTTP port (default: 3000, use 80 for Nginx)")
     parser.add_argument("--sandbox-timeout", type=int, default=600, help="Sandbox timeout in seconds (default: 600)")
+    parser.add_argument(
+        "--database",
+        choices=("none", "managed"),
+        default="none",
+        help="Managed database integration to enable (default: none)",
+    )
     parser.add_argument("-v", "--verbose", action="store_true", help="Enable debug logging")
     return parser.parse_args()
 
@@ -41,6 +53,18 @@ def get_env_variables():
         if val:
             env[key] = val
     return env
+
+
+def load_migrations(example_dir: Path):
+    migrations_dir = example_dir / "migrations"
+    if not migrations_dir.exists():
+        raise FileNotFoundError(f"Migrations directory not found: {migrations_dir}")
+
+    migration_files = sorted(migrations_dir.glob("*.sql"))
+    if not migration_files:
+        raise FileNotFoundError(f"No SQL migrations found in: {migrations_dir}")
+
+    return [path.read_text() for path in migration_files]
 
 
 def find_or_create_project(client, name):
@@ -82,11 +106,13 @@ def main():
         sys.exit(1)
 
     dockerfile_content = dockerfile_path.read_text()
+    example_dir = dockerfile_path.parent
     env_vars = get_env_variables()
 
     print(f"Deploying [{args.project_name}] with template [{args.template}]")
     print(f"  Dockerfile: {dockerfile_path}")
     print(f"  HTTP port: {args.http_port}")
+    print(f"  Database: {args.database}")
     print(f"  Env vars: {list(env_vars.keys())}")
 
     sandbox = None
@@ -107,17 +133,24 @@ def main():
 
             # Step 3: Deploy
             print("\n[3/3] Deploying...")
-            deployment = project.deploy(
-                sandbox_id=sandbox_id,
-                arti_dir=ARTI_DIR,
-                dockerfile=dockerfile_content,
-                message="Deployment via SDK",
-                environment_variables=env_vars,
-                http_port=args.http_port,
-                check_health_path="/",
-                wait=True,
-                on_status_change=lambda d: print(f"  Status: {d.status.name}"),
-            )
+            deploy_kwargs = {
+                "sandbox_id": sandbox_id,
+                "arti_dir": ARTI_DIR,
+                "dockerfile": dockerfile_content,
+                "message": "Deployment via SDK",
+                "http_port": args.http_port,
+                "check_health_path": "/",
+                "wait": True,
+                "on_status_change": lambda d: print(f"  Status: {d.status.name}"),
+            }
+
+            if args.database == "managed":
+                deploy_kwargs["database"] = True
+                deploy_kwargs["migrations"] = load_migrations(example_dir)
+            else:
+                deploy_kwargs["environment_variables"] = env_vars
+
+            deployment = project.deploy(**deploy_kwargs)
 
             if is_successful(deployment.status):
                 project = client.get_project(project.id)

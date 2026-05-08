@@ -1,0 +1,23 @@
+{
+  "name": "ecomm-webapp",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.tsx",
+    "build": "tsc && cp -r public dist/",
+    "start": "node dist/index.js",
+    "clean-port": "fuser -k 3000/tcp 2>/dev/null || true",
+    "test": "curl http://localhost:3000",
+    "db:migrate": "tsx src/migrate.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "dotenv": "^16.3.1",
+    "hono": "^4.10.7",
+    "mysql2": "^3.15.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

@@ -102,14 +102,35 @@ Deployment successful! (ID: dep_456)
   URL: https://my-webapp.novita.space
 ```
 
-## Example Projects
+### Deploying with Managed Database
+
+Build the managed database example template:
+
+```bash
+cd ecomm-with-managed-db
+novita-sandbox-cli template build -d ./novita.Dockerfile -n ecomm-with-managed-db
+cd ..
+```
+
+Deploy with Artifact Hosting managed database enabled:
+
+```bash
+python app.py \
+  --template ecomm-with-managed-db \
+  --project-name my-ecomm-managed-db \
+  --dockerfile ecomm-with-managed-db/Dockerfile \
+  --database managed
+```
+
+When `--database managed` is set, Artifact Hosting provisions a database, runs the SQL files in `migrations/`, and injects `DATABASE_URL` into the deployed app. You do not need to set `DATABASE_URL` manually for this mode.
+
 
 This repository includes several example projects:
 
 | Directory | Description | Stack |
 |-----------|-------------|-------|
 | `ecomm-with-sql/` | E-commerce store with SQL | Node.js, Vite, PostgreSQL |
-| `snake-game-with-backend/` | Snake game with backend | Node.js, Vite, Express |
+| `ecomm-with-managed-db/` | E-commerce store with managed database | Node.js, Hono, MySQL-compatible database, mysql2 |
 | `snake-game-static/` | Snake game (frontend only) | Static HTML/JS |
 
 ### Deploying an Example Project
