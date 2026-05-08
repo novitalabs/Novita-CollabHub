@@ -141,7 +141,7 @@ A fully-featured online shopping platform built with Hono + Cloudflare Pages + D
         "id": 1,
         "name": "iPhone 15 Pro",
         "description": "Latest Apple flagship phone...",
-        "price": 7999.00,
+        "price": 999.00,
         "stock": 50,
         "category": "Phones & Electronics",
         "image_url": "https://..."
@@ -187,7 +187,7 @@ A fully-featured online shopping platform built with Hono + Cloudflare Pages + D
         "product_id": 1,
         "quantity": 2,
         "name": "iPhone 15 Pro",
-        "price": 7999.00,
+        "price": 999.00,
         "image_url": "https://...",
         "stock": 50
       }
@@ -243,7 +243,7 @@ A fully-featured online shopping platform built with Hono + Cloudflare Pages + D
     "success": true,
     "message": "Order created successfully",
     "orderId": 1,
-    "totalAmount": 15998.00
+    "totalAmount": 1998.00
   }
   ```
 
@@ -257,7 +257,7 @@ A fully-featured online shopping platform built with Hono + Cloudflare Pages + D
       {
         "id": 1,
         "user_id": 1,
-        "total_amount": 15998.00,
+        "total_amount": 1998.00,
         "status": "pending",
         "shipping_address": "123 Main St, Beijing",
         "phone": "13800138000",
@@ -276,16 +276,16 @@ A fully-featured online shopping platform built with Hono + Cloudflare Pages + D
     "order": {
       "id": 1,
       "user_id": 1,
-      "total_amount": 15998.00,
+      "total_amount": 1998.00,
       "status": "pending",
       "items": [
         {
           "id": 1,
           "product_id": 1,
           "product_name": "iPhone 15 Pro",
-          "price": 7999.00,
+          "price": 999.00,
           "quantity": 2,
-          "subtotal": 15998.00
+          "subtotal": 1998.00
         }
       ]
     }

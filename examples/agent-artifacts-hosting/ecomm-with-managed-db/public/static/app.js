@@ -158,7 +158,7 @@ function displayProducts(products) {
                 <h3 class="text-lg font-semibold text-gray-900 mb-2">${product.name}</h3>
                 <p class="text-gray-600 text-sm mb-2 line-clamp-2">${product.description || ''}</p>
                 <div class="flex justify-between items-center mb-3">
-                    <span class="text-2xl font-bold text-red-600">¥${parseFloat(product.price).toFixed(2)}</span>
+                    <span class="text-2xl font-bold text-red-600">$${parseFloat(product.price).toFixed(2)}</span>
                     <span class="text-sm text-gray-500">Stock: ${product.stock}</span>
                 </div>
                 <button onclick="addToCart(${product.id})"
@@ -246,7 +246,7 @@ function displayCart(items) {
                     <img src="${item.image_url}" alt="${item.name}" class="w-20 h-20 object-cover rounded">
                     <div class="flex-1">
                         <h4 class="font-semibold">${item.name}</h4>
-                        <p class="text-red-600 font-bold">¥${parseFloat(item.price).toFixed(2)}</p>
+                        <p class="text-red-600 font-bold">$${parseFloat(item.price).toFixed(2)}</p>
                     </div>
                     <div class="flex items-center gap-2">
                         <button onclick="updateCartQuantity(${item.id}, ${item.quantity - 1})"
@@ -256,7 +256,7 @@ function displayCart(items) {
                                 class="px-3 py-1 bg-gray-300 rounded hover:bg-gray-400"
                                 ${item.quantity >= item.stock ? 'disabled class="opacity-50"' : ''}>+</button>
                     </div>
-                    <div class="font-bold text-lg">¥${(parseFloat(item.price) * item.quantity).toFixed(2)}</div>
+                    <div class="font-bold text-lg">$${(parseFloat(item.price) * item.quantity).toFixed(2)}</div>
                     <button onclick="removeFromCart(${item.id})"
                             class="text-red-600 hover:text-red-700">
                         <i class="fas fa-trash"></i>
@@ -267,7 +267,7 @@ function displayCart(items) {
         <div class="mt-6 pt-6 border-t">
             <div class="flex justify-between items-center mb-4">
                 <span class="text-xl font-bold">Total:</span>
-                <span class="text-2xl font-bold text-red-600">¥${totalAmount.toFixed(2)}</span>
+                <span class="text-2xl font-bold text-red-600">$${totalAmount.toFixed(2)}</span>
             </div>
             <button onclick="proceedToCheckout()"
                     class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 text-lg font-semibold">
@@ -322,7 +322,7 @@ async function proceedToCheckout() {
         });
 
         if (response.data.success) {
-            alert(`Order created! Order #: ${response.data.orderId}\nTotal: ¥${parseFloat(response.data.totalAmount).toFixed(2)}`);
+            alert(`Order created! Order #: ${response.data.orderId}\nTotal: $${parseFloat(response.data.totalAmount).toFixed(2)}`);
             closeModal('cartModal');
             loadCart();
             showOrders();
@@ -391,7 +391,7 @@ function displayOrders(orders) {
                         Phone: ${order.phone}
                     </p>
                     <div class="flex justify-between items-center mt-4">
-                        <span class="text-xl font-bold text-red-600">Total: ¥${parseFloat(order.total_amount).toFixed(2)}</span>
+                        <span class="text-xl font-bold text-red-600">Total: $${parseFloat(order.total_amount).toFixed(2)}</span>
                         <button onclick="viewOrderDetail(${order.id})"
                                 class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
                             View Details
@@ -409,8 +409,8 @@ async function viewOrderDetail(orderId) {
         if (response.data.success) {
             const order = response.data.order;
             alert(`Order Details:\n\n${order.items.map(item =>
-                `${item.product_name} x ${item.quantity} = ¥${parseFloat(item.subtotal).toFixed(2)}`
-            ).join('\n')}\n\nTotal: ¥${parseFloat(order.total_amount).toFixed(2)}`);
+                `${item.product_name} x ${item.quantity} = $${parseFloat(item.subtotal).toFixed(2)}`
+            ).join('\n')}\n\nTotal: $${parseFloat(order.total_amount).toFixed(2)}`);
         }
     } catch (error) {
         alert('Failed to get order details');
